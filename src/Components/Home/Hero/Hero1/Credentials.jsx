@@ -1,4 +1,4 @@
-// import React from 'react'
+import {Link} from 'react-router-dom'
 import { BsArrowBarRight } from "react-icons/bs";
 import img from "../../../../assets/images/sign.png";
 import img2 from "../../../../assets/images/my-works.png";
@@ -10,20 +10,22 @@ const Credentials = () => {
       image: img,
       textBlur: "More About Me",
       text: "Credentials",
+      link: "/credentials"
     },
     {
       id: 2,
       image: img2,
       textBlur: "ShowCase",
       text: "Projects",
+      link:"projects"
     },
   ];
   return (
-    <div className="credentials sm:flex items-center justify-center gap-5">
+    <div className="container mx-auto sm:flex items-center justify-center gap-5">
       {data.map((item) => {
         return (
-          <div className="flex flex-col  border border-white/[0.15] text-center bg-[#161616] py-3 px-14  gap-5 sm:mt-0 mt-5 rounded-[20px] sm:w-auto " key={item.id}>
-            <div className="image">
+          <div className="flex flex-col  border border-white/[0.15] text-center bg-[#161616] py-3 px-14  gap-5 sm:mt-0 mt-5 rounded-[20px] lg:w-auto w-[100vw]" key={item.id}>
+            <div className="image mx-auto">
               <img src={item.image} alt="sign" />
             </div>
 
@@ -38,7 +40,9 @@ const Credentials = () => {
               </div>
 
               <div className="link">
-                <BsArrowBarRight className="text-gray-600 text-3xl font-semibold cursor-pointer hover:text-white transition-all ease-in-out " />
+                <Link to={item.link}>
+                      <BsArrowBarRight className="text-gray-600 text-3xl font-semibold cursor-pointer hover:text-white transition-all ease-in-out " />
+                </Link>
               </div>
             </div>
           </div>

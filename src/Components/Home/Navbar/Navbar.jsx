@@ -27,22 +27,21 @@ export const Navbar = () =>{
             </div>
                 <div className="toggle-btn">
                     <span onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
-                        {isMobileMenuOpen ? <FaTimes className="text-white md:hidden text-[2.2rem] absolute top-[45px] right-[5px]"/>:<RxHamburgerMenu className="text-white md:hidden text-[2.2rem] absolute top-[45px] right-[5px]"/> }
+                        {isMobileMenuOpen ? <FaTimes className="text-white md:hidden text-[2.2rem] absolute top-[45px] right-[5px] cursor-pointer"/>:<RxHamburgerMenu className="text-white md:hidden text-[2.2rem] absolute top-[45px] right-[5px] cursor-pointer"/> }
                     </span>
                 </div>
-                <hr className="md:hidden w-[100vw] py-2"/>
-                <ul className={` md:flex items-center gap-10 text-center absolute bg-black md:static md:z-auto z-40 md:top-[20px] md:w-auto w-full left-0 py-8 transition-all  ease-in-out ${isMobileMenuOpen ? "top-[5.2rem]" : "top-[-490px]"}`}>
+                <ul className={`flex md:flex-row flex-col items-center text-center md:gap-10 gap-5 absolute bg-black md:static md:z-auto z-40 md:top-[20px] md:w-auto w-full left-0 py-8 md:border-hidden border border-t-white border-b-0 border-l-0  transition-all  ease-in-out ${isMobileMenuOpen ? "top-[5.2rem]" : "top-[-490px]"}`}>
                     { 
                         links.map((item, ind) =>{
                             return(
-                                <>
+                                < >
                                 <Link to={item.link} key={ind} className={`text-white list-none text-xl hover:text-white/[0.15] cursor-pointer md:my-0 my-5 transition-all ease-in ${item.active ? "text-white/[0.30]" : ""}`} onClick={() => setActiveTab(item.name)}>{item.name}</Link>
                                 
                                 </>
                             )
                         })
                     }
-                    <Link to={"/contact"} className="bg-white/[0.15] py-2 px-6 rounded-lg text-white text-[1.2rem] hover:bg-white hover:text-black transition-all ease-in md:ml-0 ml-7">Lets Talk</Link>
+                    <Link to={"/contact"} className="bg-white/[0.15] py-2 px-6 rounded-lg text-white text-[1.2rem] hover:bg-white hover:text-black md:block hidden transition-all ease-in md:ml-0 ml-7">Lets Talk</Link>
                 </ul>
         </div>
         </>
