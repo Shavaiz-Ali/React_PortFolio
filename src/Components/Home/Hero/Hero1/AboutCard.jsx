@@ -29,7 +29,7 @@ export const AboutCard = () => {
 
                 {/* marquee and credentials card and  goes here  */}
                 <div className="hero-left flex flex-col items-center justify-center gap-5">
-                    <div className="marquee">
+                    <div className="container marquee">
                         <Marquee>
                             <span className="text-lg text-white">This is a marquee text.</span>
                         </Marquee>

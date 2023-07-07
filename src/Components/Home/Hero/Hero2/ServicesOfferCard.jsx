@@ -5,7 +5,7 @@ export const ServicesOfferCard = () =>{
     return(
         <>
             <div className="services-offer border border-white/[0.15] text-center bg-[#161616] sm:py-8 sm:px-12 px-8 py-5 gap-5 rounded-[20px] sm:w-auto w-[100vw]">
-                <div className="grid sm:grid-cols-4 grid-cols-2 place-items-center mx-auto text-center">
+                <div className="grid grid-cols-4 grid-cols-2 place-items-center mx-auto text-center">
                     <span className="text-4xl text-white py-6" ><BsBrowserChrome /></span>
                     <span className="text-4xl text-white py-6"><BsBrowserChrome /></span>
                     <span className="text-4xl text-white py-6"><BsBrowserChrome /></span>
