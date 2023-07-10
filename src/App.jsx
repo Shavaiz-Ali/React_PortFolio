@@ -10,9 +10,13 @@ import Contact from "./Components/Pages/Contact"
 import Credentials from "./Components/Pages/Credentials"
 import Projects from "./Components/Pages/Projects"
 import Footer from "./Components/Footer/Footer";
+
+// importing amination component
+import Fade from "./Components/Animation/Fade";
  function App() {
   return (
     <>
+    <Fade duration={500}>
       <div className="container xl:w-[80%] w-full mx-auto">
 
         <Router>
@@ -28,6 +32,7 @@ import Footer from "./Components/Footer/Footer";
           <Footer />
         </Router>
       </div>
+      </Fade>
     </>
   );
 }

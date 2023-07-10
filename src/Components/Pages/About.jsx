@@ -5,8 +5,11 @@ import Experience_Edu  from "./About/Experience_Edu";
 import SocialIcons from "../Home/Hero/Hero2/SocialIcons"
 import {ContactCard }from "../Home/Hero/Hero2/ContactCard"
 import {ServicesOfferCard} from "../Home/Hero/Hero2/ServicesOfferCard"
+import Fade from "../Animation/Fade"
 const About = () => {
   return (
+    
+    <Fade duration={500}>
     <div className="container  mx-auto">
       <div className="lg:flex gap-10 justify-center items-center">
         <AboutImg />
@@ -19,6 +22,7 @@ const About = () => {
             <div className="lg:col-span-3 sm:col-span-6 col-span-auto lg:order-3 order-1"><SocialIcons /></div>        
         </div>
     </div>
+    </Fade>
   )
 }
 

@@ -19,7 +19,7 @@ export const AboutCard = () => {
                             <div className="name text-center mx-auto ">
                                 <h1 className="sm:text-[18px] text-[16px] font-normal text-gray-600  sm:text-left text-center">A Front-End Developer</h1>
                                 <h1 className="sm:text-4xl text-2xl font-semibold text-white sm:text-left text-center">Shavaiz Ali</h1>
-                                <h1 className="sm:text-[18px] text-[16px] font-normal text-gray-600  sm:text-left text-center">I am a Web Developer Based In <br /> GilGit Pakistan</h1>
+                                <h1 className="sm:text-[18px] text-[16px] font-normal text-gray-600  sm:text-left text-center">I am a Web Developer Based In  GilGit Pakistan</h1>
                             </div>
                         </div>
 
