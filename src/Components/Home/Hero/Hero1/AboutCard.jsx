@@ -6,7 +6,7 @@ import Credentials from "./Credentials"
 export const AboutCard = () => {
     return (
         <>
-            <div className="container xl:w-80% w-full ">
+            <div className="container xl:w-80% w-full">
                 {/* about card  */}
                 <div className="lg:flex justify-center items-center gap-4">
                     <div className="card relative border border-white/[0.15] text-center bg-[#161616] sm:py-8 sm:px-12 py-5 gap-5 rounded-[20px] sm:w-auto w-[100vw]">
