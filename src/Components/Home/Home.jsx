@@ -7,7 +7,7 @@ export const Home = () =>{
     return( 
         <>
             <AboutCard />
-                <div className="container mx-auto grid sm:grid-cols-12 lg:py-10 py-5 gap-5 ">
+                <div className="container xl:w-[100%] mx-auto grid sm:grid-cols-12 lg:py-10 py-5 gap-5 ">
                     <div className="lg:col-span-5 sm:col-span-12 col-span-auto lg:order-1 order-3"><ServicesOfferCard /></div> 
                     <div className="lg:col-span-4 sm:col-span-6 col-span-auto order-2"><ContactCard /></div> 
                     <div className="lg:col-span-3 sm:col-span-6 col-span-auto lg:order-3 order-1"><SocialIcons /></div>        

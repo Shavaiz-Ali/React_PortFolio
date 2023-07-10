@@ -24,7 +24,7 @@ const Credentials = () => {
     <div className="container mx-auto sm:flex items-center justify-center gap-5">
       {data.map((item) => {
         return (
-          <div className="flex flex-col  border border-white/[0.15] text-center bg-[#161616] py-3 px-[3rem] gap-5 sm:mt-0 mt-5 rounded-[20px] lg:w-auto w-[100vw]" key={item.id}>
+          <div className="flex flex-col  border border-white/[0.15] text-center bg-[#161616] py-3 lg:px-[3rem] px-5 gap-5 sm:mt-0 mt-5 rounded-[20px] lg:w-auto w-[100vw]" key={item.id}>
             <div className="image mx-auto">
               <img src={item.image} alt="sign" />
             </div>

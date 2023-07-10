@@ -13,7 +13,7 @@ import Footer from "./Components/Footer/Footer";
  function App() {
   return (
     <>
-      <div className="container mx-auto">
+      <div className="container xl:w-[80%] w-full mx-auto">
 
         <Router>
           <Navbar />

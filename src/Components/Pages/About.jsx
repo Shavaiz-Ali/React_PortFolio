@@ -1,9 +1,11 @@
 // import React from 'react'
-
+import {AboutImg} from "./About/AboutImg"
+import {SelfSummary} from "./About/SelfSummary"
 const About = () => {
   return (
-    <div>
-     <h1 className="text-white"> About</h1>
+    <div className="container lg:flex justify-center items-center mx-auto gap-10">
+      <AboutImg />
+      <SelfSummary />
     </div>
   )
 }
