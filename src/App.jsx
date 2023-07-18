@@ -5,7 +5,6 @@ import { Navbar } from "./Components/Navbar/Navbar";
 
 // importing pages 
 import About from "./Components/Pages/About"
-import Work from "./Components/Pages/Work"
 import Contact from "./Components/Pages/Contact"
 import Credentials from "./Components/Pages/Credentials"
 import Projects from "./Components/Pages/Projects"
@@ -23,7 +22,6 @@ import Fade from "./Components/Animation/Fade";
             <Routes>
               <Route exact path="/" element={<Home />}/>
               <Route exact path="/about" element={<About/>}/>
-              <Route exact path="/works" element={<Work />}/>
               <Route exact path="/contact" element={<Contact />}/>
               <Route exact path="/credentials" element={<Credentials />}/>
               <Route exact path="/projects" element={<Projects />}/>

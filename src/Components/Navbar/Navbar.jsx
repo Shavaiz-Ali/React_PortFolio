@@ -14,7 +14,7 @@ export const Navbar = () =>{
         () => [
           { name: "Home", link: "/", active: activeTab === "Home" },
           { name: "About", link: "/about", active: activeTab === "About" },
-          { name: "Work", link: "/works", active: activeTab === "Work" },
+          { name: "Work", link: "/projects", active: activeTab === "Work" },
           { name: "Contact", link: "/contact", active: activeTab === "Contact" },
         ],
         [activeTab]
