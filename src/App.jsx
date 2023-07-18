@@ -17,8 +17,7 @@ import Fade from "./Components/Animation/Fade";
   return (
     <>
     <Fade duration={500}>
-      <div className="container xl:w-[80%] w-full mx-auto">
-
+      <div className="container xl:w-[85%] w-full mx-auto">
         <Router>
           <Navbar />
             <Routes>
