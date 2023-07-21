@@ -3,7 +3,7 @@ import {ProjectLeft} from "./Projects/ProjectLeft"
 import {ProjectRight} from "./Projects/ProjectRight"
 const Projects = () => {
   return (
-    <div className="container mx-auto flex lg:flex-row flex-col flex-col-reverse justify-center gap-10">
+    <div className="container mx-auto flex lg:flex-row flex-col flex-col justify-center gap-10">
       <div className="lg:order-1 order-2"><ProjectLeft /></div>
         <div className="projectleft lg:order-2 order-1">
           <div className="flex justify-center items-center gap-1">
